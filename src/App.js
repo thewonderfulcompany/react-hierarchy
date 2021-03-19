@@ -4,22 +4,67 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+        <Test/>
+
+
     </div>
   );
 }
+
+
+
+
+function Test(){
+
+  const layerNames = ['Subprocess', 'Process', 'Zone', 'Area', 'Business Unit']
+
+  let wrappers = (depth=5, layers, text='') => {
+    if (depth > 1){
+      depth -= 1
+      let x = []
+      for (let i=0; i<Math.floor(Math.random() * 4) + 1; i++){ 
+        x.push(wrappers(depth, layers, i)) 
+      }
+      layers = <Wrapper text={`${layerNames[depth]} ${text}`}> {x} </Wrapper>
+    }
+    else{
+      let x = []
+      for (let i=0; i<Math.floor(Math.random() * 1) + 2; i++){ x.push(<Item text={'Subprocess '+i}/>) }
+      layers = x
+    }
+
+    return layers
+  }
+
+  
+
+  return <div>{wrappers()}</div>
+}
+
+
+function Item(props){
+  return <div className='item'><p>{props.text}</p></div>
+}
+
+function Col(props){
+  return <div className='col'>{props.children}</div>
+}
+
+
+function Wrapper(props){
+  return( 
+    <div className='wrapper'>
+      <Col>
+        <Item text={props.text}/>
+      </Col>
+      <Col>
+        {props.children}
+      </Col>
+    </div>
+  )
+}
+
 
 export default App;
