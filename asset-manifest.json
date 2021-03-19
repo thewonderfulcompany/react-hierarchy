@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-hierarchy/static/css/main.12a9cc6f.chunk.css",
+    "main.js": "/react-hierarchy/static/js/main.358a01c2.chunk.js",
+    "main.js.map": "/react-hierarchy/static/js/main.358a01c2.chunk.js.map",
+    "runtime-main.js": "/react-hierarchy/static/js/runtime-main.6619c5f3.js",
+    "runtime-main.js.map": "/react-hierarchy/static/js/runtime-main.6619c5f3.js.map",
+    "static/js/2.23688002.chunk.js": "/react-hierarchy/static/js/2.23688002.chunk.js",
+    "static/js/2.23688002.chunk.js.map": "/react-hierarchy/static/js/2.23688002.chunk.js.map",
+    "static/js/3.671b9932.chunk.js": "/react-hierarchy/static/js/3.671b9932.chunk.js",
+    "static/js/3.671b9932.chunk.js.map": "/react-hierarchy/static/js/3.671b9932.chunk.js.map",
+    "index.html": "/react-hierarchy/index.html",
+    "static/css/main.12a9cc6f.chunk.css.map": "/react-hierarchy/static/css/main.12a9cc6f.chunk.css.map",
+    "static/js/2.23688002.chunk.js.LICENSE.txt": "/react-hierarchy/static/js/2.23688002.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-hierarchy/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6619c5f3.js",
+    "static/js/2.23688002.chunk.js",
+    "static/css/main.12a9cc6f.chunk.css",
+    "static/js/main.358a01c2.chunk.js"
+  ]
+}
